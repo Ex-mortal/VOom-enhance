@@ -26,6 +26,7 @@ noremap <silent> <F11> :call Def_Voom()<CR>
 inoremap <silent> <F11> <esc>:call Def_Voom()<CR>
 ```
 这样你就可以用 F11 键快速生成目录了。
+
 （注意：对于十几兆大小的长篇小说，这个脚本在执行的时候会有几秒钟的卡顿。不过，并不会卡太久。）
 ### 样式
 1. 支持以'#'开头的 Markdown 式标题。
