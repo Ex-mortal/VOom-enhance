@@ -34,7 +34,7 @@ CHAR = '#'
 headline_match = re.compile(r'^(%s+)' %re.escape(CHAR)).match
 
 chapter_match = re.compile(r'^第[0-9０-９〇零一二三四五六七八九十百千万]{1,5}[卷册集部章回节幕]'
-                        r'|^(序|自序|代序|楔子|尾声|跋|后记|番外)'
+                        r'|^(序|自序|代序|楔子|引子|尾声|跋|后记|番外)'
                         r'|^☆、'
                         ).match
 is_Py2 = False
