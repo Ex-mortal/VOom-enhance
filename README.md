@@ -11,7 +11,8 @@ Enhancements for vim plugin VOom.
 ```
 let g:voom_ft_modes = {
 			\'text' : 'chapter',
-			"\'' : 'chapter',}
+			"\'' : 'chapter',
+			}
 
 noremap <F11> :VoomToggle<CR>
 inoremap <F11> <esc>:VoomToggle<CR>
