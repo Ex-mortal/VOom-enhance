@@ -1,8 +1,8 @@
 # VOom-enhance
 Enhancements for vim plugin VOom.
-## 自动生成小说目录
+## 1.自动生成小说目录
 ### 用法：
-1.在 Vim 中安装 VOom 插件。
+1.在 Vim 中安装 VOom 插件。[VOom 链接](https://github.com/vim-scripts/VOoM)
 2.将 voom_mode_chapter.py 放入 'VOom/autoload/voom' 目录.
 ### 样式
 1.支持以'#'开头的 Markdown 式标题。
