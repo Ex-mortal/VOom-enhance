@@ -9,21 +9,12 @@ Enhancements for vim plugin VOom.
 3. 现在可以用 ':Voom chapter' 命令来生成目录了。或者你也可以在 vimrc 中添加如下内容：
 
 ```
-function! Def_Voom()
-  if &filetype == '' || &filetype =='text'
-    :VoomToggle chapter	
-  "elseif &filetype =="markdown"
-	"	:VoomToggle markdown
-	"elseif &filetype == "pandoc"
-	"	:VoomToggle pandoc
-	"elseif &filetype =="org"
-	"	:VoomToggle org
-	else
-		:VoomToggle
-	endif
-endfunction
-noremap <silent> <F11> :call Def_Voom()<CR>
-inoremap <silent> <F11> <esc>:call Def_Voom()<CR>
+let g:voom_ft_modes = {
+			\'text' : 'chapter',
+			"\'' : 'chapter',}
+
+noremap <F11> :VoomToggle<CR>
+inoremap <F11> <esc>:VoomToggle<CR>
 ```
 这样你就可以用 F11 键快速生成目录了。
 
